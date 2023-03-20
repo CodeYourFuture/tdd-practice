@@ -1,0 +1,22 @@
+{
+  "name": "tdd-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeYourFuture/tdd-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeYourFuture/tdd-practice/issues"
+  },
+  "homepage": "https://github.com/CodeYourFuture/tdd-practice#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
