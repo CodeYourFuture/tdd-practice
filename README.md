@@ -29,16 +29,14 @@ function canAdmitToNightClub() {}
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 b) <details><summary>Answer:</summary> Failing. This is ok. It is a good first failing test (it could be argued that the person argument and return false are not strictly needed in the code to be tested)</details>
@@ -53,16 +51,14 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 c) <details><summary>Answer:</summary> Passing. This is not ok. The test passes instead of failing</details>
@@ -77,16 +73,14 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 d) <details><summary>Answer:</summary> Failing. This is not ok. There are 2 failing tests (when you have more experience you might find that writing 2 tests instead of one is occasionally the best thing to do</details>
@@ -99,25 +93,23 @@ function canAdmitToNightClub() {}
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 
-      test("returns false for a person under 18", () => {
-           const personUnder18 = {
-               age: 17,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(false);
-       }
-   });
+test("returns false for a person under 18", () => {
+  const personUnder18 = {
+    age: 17,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(false);
+});
 ```
 
 ### Step 2
@@ -136,16 +128,14 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 b) <details><summary>Answer:</summary> Passing. This is ok. The test now passes</details>
@@ -160,16 +150,14 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 c) <details><summary>Answer:</summary> Passing. This is not ok. The test passes, but we have written too much code. This might not seem like a bad thing, but it is now not possible to write a failing test for a person under 18</details>
@@ -184,16 +172,14 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
-   });
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 ```
 
 Step 3
@@ -216,25 +202,23 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 
-       test("returns false for a person under 18", () => {
-           const personUnder18 = {
-               age: 17,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personUnder18)).toBe(false);
-       }
-   });
+test("returns false for a person under 18", () => {
+  const personUnder18 = {
+    age: 17,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personUnder18)).toBe(false);
+});
 ```
 
 b) <details><summary>Answer:</summary> Failing. This is ok. But it's probably not the best next failing test as we have started our tests by working with a person's age (according to the written description)</details>
@@ -249,23 +233,21 @@ function canAdmitToNightClub(person) {
 Tests
 
 ```javascript
-   describe("canAdmitToNightClub", () => {
-       test("returns true for a person over 18", () => {
-           const personOver18 = {
-               age: 30,
-               isVisiblyInebriated: false,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(personOver18)).toBe(true);
-       }
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
 
-       test("returns false for an inebriated person", () => {
-           const inebriatedPerson = {
-               age: 18,
-               isVisiblyInebriated: true,
-               isAccompaniedByAdult: false,
-           };
-           expect(canAdmitToNightClub(inebriatedPerson)).toBe(false);
-       }
-   });
+test("returns false for an inebriated person", () => {
+  const inebriatedPerson = {
+    age: 18,
+    isVisiblyInebriated: true,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(inebriatedPerson)).toBe(false);
+});
 ```
