@@ -108,7 +108,7 @@ test("returns false for a person under 18", () => {
     isVisiblyInebriated: false,
     isAccompaniedByAdult: false,
   };
-  expect(canAdmitToNightClub(personOver18)).toBe(false);
+  expect(canAdmitToNightClub(personUnder18)).toBe(false);
 });
 ```
 
