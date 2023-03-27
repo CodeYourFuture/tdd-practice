@@ -24,7 +24,7 @@ function canAdmitToNightClub(person) {
   }
 }
 
-// test.......
+// ...........test.......
 
 test("returns true for a person over 18", () => {
   const personOver18 = {
@@ -35,14 +35,7 @@ test("returns true for a person over 18", () => {
   expect(canAdmitToNightClub(personOver18)).toBe(true);
 });
 
-test("returns true for a person over 18", () => {
-  const personOver18 = {
-    age: 30,
-    isVisiblyInebriated: false,
-    isAccompaniedByAdult: false,
-  };
-  expect(canAdmitToNightClub(personOver18)).toBe(true);
-});
+//.......................
 
 test("returns false for a person under 18", () => {
   const personUnder18 = {
@@ -53,6 +46,8 @@ test("returns false for a person under 18", () => {
   expect(canAdmitToNightClub(personUnder18)).toBe(false);
 });
 
+//.......................
+
 test("returns true for a person under 18 accompanied by adult", () => {
   const personUnder18 = {
     age: 17,
@@ -62,6 +57,8 @@ test("returns true for a person under 18 accompanied by adult", () => {
   expect(canAdmitToNightClub(personUnder18)).toBe(true);
 });
 
+//......................
+
 test("returns false for a person visibly inebriated, under 18 accompanied", () => {
   const personUnder18 = {
     age: 17,
@@ -70,6 +67,8 @@ test("returns false for a person visibly inebriated, under 18 accompanied", () =
   };
   expect(canAdmitToNightClub(personUnder18)).toBe(false);
 });
+
+//.......................
 
 test("returns false for a person visibly inebriated, 18 years old", () => {
   const personUnder18 = {
