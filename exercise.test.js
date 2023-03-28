@@ -8,7 +8,17 @@
   - isVisiblyInebriated (Boolean)
 */
 
-function canAdmitToNightClub(person) {}
+function canAdmitToNightClub(person) {
+  if (person.isVisiblyInebriated === false) {
+    if (person.age >= 18 || person.isAccompaniedByAdult === true) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
 
 // Person A - over 18, not inebriated, no adult
 test("is the person over 18", () => {
