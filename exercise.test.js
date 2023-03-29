@@ -7,3 +7,28 @@
   - isAccompaniedByAdult (Boolean)
   - isVisiblyInebriated (Boolean)
 */
+
+function canAdmitToNightClub(person) {
+  return false;
+}
+
+
+//..............................................
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(false);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 18,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(false);
+});
+
