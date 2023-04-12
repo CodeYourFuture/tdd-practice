@@ -7,3 +7,118 @@
   - isAccompaniedByAdult (Boolean)
   - isVisiblyInebriated (Boolean)
 */
+function canAdmitToNightClub(person) {
+  return person.isVisiblyInebriated
+    ? false
+    : person.age >= 18 || person.isAccompaniedByAdult;
+}
+
+///////////////////    Tests  ///////////////////
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns false for a person under 18", () => {
+  const personOver18 = {
+    age: 17,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(false);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns false for a person under 18", () => {
+  const personUnder18 = {
+    age: 17,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personUnder18)).toBe(false);
+});
+
+test("returns true for a person over 18", () => {
+  const personOver18 = {
+    age: 30,
+    isVisiblyInebriated: false,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(personOver18)).toBe(true);
+});
+
+test("returns false for an inebriated person", () => {
+  const inebriatedPerson = {
+    age: 18,
+    isVisiblyInebriated: true,
+    isAccompaniedByAdult: false,
+  };
+  expect(canAdmitToNightClub(inebriatedPerson)).toBe(false);
+});
